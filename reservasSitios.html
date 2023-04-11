@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>PARQUEADERO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link rel="stylesheet" type="text/css" href="estilosGenerlaes.css">
+<body>
+
+<div class="w3-container">
+  <h2>Reserva de Sitios</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue w3-large">RESERVAR</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center"><br>
+        <h2>RESERVA DE SITIOS</h2>
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Nombre del propietario:</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Ingresar nombre" name="usrname" required>
+          
+          <label><b>Placa:</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Ingresar placa del vehiculo" name="usrname" required>
+
+          <label><b>Numero de sitio a reservar</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Numero de sitio" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Reservar</button>
+        
+          <div class="w3-panel w3-light-green">
+            <label for="start">Seleccionar fecha:</label>
+
+          <input type="date" id="start" name="trip-start"
+                 value="2018-07-22"
+                 min="2018-01-01" max="2018-12-31">
+          </div> 
+
+            <div class="w3-bar w3-light-green">
+              <div class="w3-dropdown-hover">
+                <button class="w3-button w3-light-green">Seleccionar hora</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="#" class="w3-bar-item w3-button">8 - 10 am</a>
+                  <a href="#" class="w3-bar-item w3-button">10 - 12 pm</a>
+                  <a href="#" class="w3-bar-item w3-button">12 - 14 pm</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>          
+</body>
+</html>
